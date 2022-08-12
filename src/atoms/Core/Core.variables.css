@@ -1,0 +1,33 @@
+:root {
+  --scrollbarTrackColor: transparent;
+  --scrollbarThumbColor: #c2c2c2;
+  --scrollbarThumbColorHover: #7d7d7d;
+  --scrollbarWidth: 11px;
+
+  /* Firefox does not support setting scrollbar width in px */
+  --scrollbarImplicitlyWidth: thin; /* 11px */
+
+  /* https://getbootstrap.com/docs/5.2/layout/containers/ */
+  --containerXXLargeUp: 1320px;
+}
+
+/* Responsive breakpoints
+https://getbootstrap.com/docs/5.2/layout/breakpoints/#available-breakpoints */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@custom-media --media-x-small-up (min-width: 0);
+
+/* Small devices (landscape phones, 576px and up) */
+@custom-media --media-small-up (min-width: 576px);
+
+/* Medium devices (tablets, 768px and up) */
+@custom-media --media-medium-up (min-width: 768px);
+
+/* Large devices (desktops, 992px and up) */
+@custom-media --media-large-up (min-width: 992px);
+
+/* X-Large devices (large desktops, 1200px and up) */
+@custom-media --media-x-large-up (min-width: 1200px);
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@custom-media --media-xx-large-up (min-width: 1400px);
